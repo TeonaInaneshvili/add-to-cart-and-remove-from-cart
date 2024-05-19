@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    
+
+}
+.logo{
+    width: 200px;
+}
+.container div{
+    border: 2px solid #c1a2cb;;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.container div button{
+    padding: 12px;
+    background-color: #c1a2cb;
+    color:white;
+    border-color: #c1a2cb;;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor:pointer;
+}
+.container div button:hover {
+    font-size: 0.75em;
+}
+
+.container div img{
+    max-width: 200px;
+    max-height: 200px;
+  
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgb(220 193 225);
+
+}
+header img{
+    width: 100px;
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    gap:40px;
+   
+}
+nav a{
+    font-size: 30px;
+    color: rgba(45, 43, 43, 0.703);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
+.fav{
+    font-size: 25px;
+    color:rgba(45, 43, 43, 0.703);
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    margin-top: -10px;
+    
+}
+.fav img{
+    max-width: 60px;
+}

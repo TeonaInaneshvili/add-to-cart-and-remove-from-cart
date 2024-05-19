@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promises</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+
+        .favContainer {
+            display: flex;
+            gap: 20px;
+            padding: 40px;
+            max-width: 300px;
+        }
+
+        .favContainer div {
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            border: 1px solid #c1a2cb;
+            ;
+
+
+        }
+
+        .favContainer button {
+            padding: 12px;
+            background-color: #c1a2cb;
+            border-color: #c1a2cb;
+            ;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        .favContainer button:hover {
+            font-size: 0.75em;
+        }
+
+        .favContainer div img {
+            max-width: 150px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: rgb(220 193 225);;
+        }
+
+        header img {
+            width: 60px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-size: 30px;
+            color: rgba(45, 43, 43, 0.703);
+            text-decoration: none;
+            font-weight: 600;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://alta.ge/images/logos/0/alta_logo.png" class="logo" alt="Alta Logo">
+        </a>
+
+
+        <nav>
+            <a href="cart.html" class="cart">
+                <span id="items"></span>
+                <img src="cart.png" class="cartImage" alt="Cart">
+            </a>
+        </nav>
+    </header>
+    <div class="favContainer"></div>
+    <script src="cart.js"></script>
+</body>
+
+</html>
